@@ -1,110 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind.config.js"></script>
-  </head>
-  <body>
-    <main class="m-1 flex h-[98vh] flex-col gap-1 bg-zinc-800 p-1">
-      <h1 class="mt-1 font-bold text-center bg-white">Horário 1º Semestre Design Digital - 2024</h1>
-      <section class="flex gap-1">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+</head>
+
+<body>
+  <main class="m-1 flex h-[98vh] flex-col gap-1 bg-zinc-800 p-1">
+    <h1 class="mt-1 font-bold text-center bg-white">Horário 1º Semestre Design Digital - 2024</h1>
+
+    <section class="flex flex-col h-full gap-1">
+      <div class="flex gap-1" name="dias-semana">
         <div class="flex gap-1">
-          <div class="w-8 h-5 bg-zinc-400"></div>
-          <div class="w-8 h-5 bg-zinc-400"></div>
+          <div class="w-8 h-5 bg-zinc-300"></div>
+          <div class="w-8 h-5 bg-zinc-300"></div>
         </div>
-        <div class="flex-1 bg-zinc-400 pl-[2px] text-sm font-bold">Segunda</div>
-        <div class="flex-1 bg-zinc-400 pl-[2px] text-sm font-bold">Terça</div>
-        <div class="flex-1 bg-zinc-400 pl-[2px] text-sm font-bold">Quarta</div>
-        <div class="flex-1 bg-zinc-400 pl-[2px] text-sm font-bold">Quinta</div>
-        <div class="flex-1 bg-zinc-400 pl-[2px] text-sm font-bold">Sexta</div>
-      </section>
-      <section class="flex h-full gap-1">
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Segunda</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Terça</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Quarta</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Quinta</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Sexta</div>
+      </div>
+      <div class="flex h-full gap-1" name="cards">
         <div class="flex h-full gap-1 *:w-8">
           <div class="bg-white">
-            <p class="flex justify-end text-sm font-bold whitespace-pre transform -rotate-90 translate-y-full">1º Ano (1º Semestre)</p>
+            <p class="flex justify-end text-sm font-bold whitespace-pre transform -rotate-90">
+              1º Ano (1º Semestre)
+            </p>
           </div>
-          <div class="flex flex-col gap-1">
-            <div class="h-full bg-white"><p class="flex justify-end text-xs font-bold leading-tight whitespace-pre transform -rotate-90 translate-y-full">19:00 - 20:20</p></div>
-            <div class="h-full bg-white"><p class="flex justify-end text-xs font-bold leading-tight whitespace-pre transform -rotate-90 translate-y-full">20:40 - 22:00</p></div>
+          <div class="flex flex-col gap-1 ">
+            <div class="h-full bg-white">
+              <p
+                class="flex justify-end text-xs font-bold leading-tight whitespace-pre transform -rotate-90 translate-y-2">
+                19:00 - 20:20</p>
+            </div>
+            <div class="h-full bg-white">
+              <p
+                class="flex justify-end text-xs font-bold leading-tight whitespace-pre transform -rotate-90 translate-y-2">
+                20:40 - 22:00</p>
+            </div>
           </div>
         </div>
         <div class="flex flex-col flex-1 h-full gap-1">
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
             <p>Disciplina: <span>Gestão de Projetos</span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
+            <p>Prof: <span>Grace Lis</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>77vp3c6</span></p>
           </div>
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
-            <p>Disciplina: <span>Cultura Digital</span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
-          </div>
-        </div>
-        <div class="flex flex-col flex-1 h-full gap-1">
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
-            <p>Disciplina: <span>Comportamento do Consumidor </span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
-          </div>
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
-            <p>Disciplina: <span>Empreendedorismo</span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
-          </div>
-        </div>
-        <div class="flex flex-col flex-1 h-full gap-1">
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
-            <p>Disciplina: <span>Cultura e Sociedade</span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
-          </div>
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
             <p>Disciplina: <span>Vetorização de Imagem </span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
+            <p>Prof: <span>Gabriel Arroyo</span></p>
+            <p>Sala: <span>Laboratório 04</span></p>
+            <p>Classroom: <span>6z3bakp</span></p>
           </div>
         </div>
         <div class="flex flex-col flex-1 h-full gap-1">
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Cultura Digital</span></p>
+            <p>Prof: <span>Luciane Ribeiro</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>7rf2yy7</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
             <p>Disciplina: <span>Meio Ambiente </span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
-          </div>
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
-            <p>Disciplina: <span>Direitos Humanos</span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
+            <p>Prof: <span>Viviane X. Ferreira</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>lo4mz5g</span></p>
           </div>
         </div>
         <div class="flex flex-col flex-1 h-full gap-1">
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
-            <p>Disciplina: <span>Sustentabilidade e Qualidade de Vida </span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Comportamento do Consumidor </span></p>
+            <p>Prof: <span>Ana Cristina Lima</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>tyy2p6j</span></p>
           </div>
-          <div class="h-full text-[10px] flex flex-col justify-end bg-white [&_p]:font-black [&_span]:font-normal">
-            <p>Disciplina: <span>Ergonomia</span></p>
-            <p>Prof: </p>
-            <p>Sala: </p>
-            <p>Classroom: </p>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Direitos Humanos</span></p>
+            <p>Prof: <span>Renato de Campus</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>amax673</span></p>
           </div>
         </div>
-      </section>
-      <section class="h-full bg-red-200"></section>
-      <section class="h-full bg-red-200"></section>
-    </main>
-  </body>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Empreendedorismo</span></p>
+            <p>Prof: <span>Nádia Pizzolitto</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>5r3wben</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Sustentabilidade e Qualidade de Vida </span></p>
+            <p>Prof: <span>Solange Luiz</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>vcqdd74</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Cultura e Sociedade</span></p>
+            <p>Prof: <span>Henrique</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>jcmngt4</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Ergonomia</span></p>
+            <p>Prof: <span>Gabriel Arroyo</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>rbcfzhk</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col h-full gap-1">
+      <div class="flex gap-1" name="dias-semana">
+        <div class="flex gap-1">
+          <div class="w-8 h-5 bg-zinc-300"></div>
+          <div class="w-8 h-5 bg-zinc-300"></div>
+        </div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Segunda</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Terça</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Quarta</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Quinta</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Sexta</div>
+      </div>
+      <div class="flex h-full gap-1" name="cards">
+        <div class="flex h-full gap-1 *:w-8">
+          <div class="bg-white">
+            <p class="flex justify-end text-sm font-bold whitespace-pre transform -rotate-90">
+              2º Ano (3º Semestre)
+            </p>
+          </div>
+          <div class="flex flex-col gap-1 ">
+            <div class="h-full bg-white">
+              <p
+                class="flex justify-end text-xs font-bold leading-tight whitespace-pre transform -rotate-90 translate-y-2">
+                19:00 - 20:20</p>
+            </div>
+            <div class="h-full bg-white">
+              <p
+                class="flex justify-end text-xs font-bold leading-tight whitespace-pre transform -rotate-90 translate-y-2">
+                20:40 - 22:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Gestão de Projetos</span></p>
+            <p>Prof: <span>Grace Lis</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>77vp3c6</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Vetorização de Imagem </span></p>
+            <p>Prof: <span>Gabriel Arroyo</span></p>
+            <p>Sala: <span>Laboratório 04</span></p>
+            <p>Classroom: <span>6z3bakp</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Cultura Digital</span></p>
+            <p>Prof: <span>Luciane Ribeiro</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>7rf2yy7</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Meio Ambiente </span></p>
+            <p>Prof: <span>Viviane X. Ferreira</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>lo4mz5g</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Comportamento do Consumidor </span></p>
+            <p>Prof: <span>Ana Cristina Lima</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>tyy2p6j</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Direitos Humanos</span></p>
+            <p>Prof: <span>Renato de Campus</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>amax673</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Empreendedorismo</span></p>
+            <p>Prof: <span>Nádia Pizzolitto</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>5r3wben</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Sustentabilidade e Qualidade de Vida </span></p>
+            <p>Prof: <span>Solange Luiz</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>vcqdd74</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Cultura e Sociedade</span></p>
+            <p>Prof: <span>Henrique</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>jcmngt4</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Ergonomia</span></p>
+            <p>Prof: <span>Gabriel Arroyo</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>rbcfzhk</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col h-full gap-1">
+      <div class="flex gap-1" name="dias-semana">
+        <div class="flex gap-1">
+          <div class="w-8 h-5 bg-zinc-300"></div>
+          <div class="w-8 h-5 bg-zinc-300"></div>
+        </div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Segunda</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Terça</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Quarta</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Quinta</div>
+        <div class="flex-1 bg-zinc-300 pl-[2px] text-sm font-bold">Sexta</div>
+      </div>
+      <div class="flex h-full gap-1" name="cards">
+        <div class="flex h-full gap-1 *:w-8">
+          <div class="bg-white">
+            <p class="flex justify-end text-sm font-bold whitespace-pre transform -rotate-90">
+              3º Ano (5º Semestre)
+            </p>
+          </div>
+          <div class="flex flex-col gap-1 ">
+            <div class="h-full bg-white">
+              <p
+                class="flex justify-end text-xs font-bold leading-tight whitespace-pre transform -rotate-90 translate-y-2">
+                19:00 - 20:20</p>
+            </div>
+            <div class="h-full bg-white">
+              <p
+                class="flex justify-end text-xs font-bold leading-tight whitespace-pre transform -rotate-90 translate-y-2">
+                20:40 - 22:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Gestão de Projetos</span></p>
+            <p>Prof: <span>Grace Lis</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>77vp3c6</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Vetorização de Imagem </span></p>
+            <p>Prof: <span>Gabriel Arroyo</span></p>
+            <p>Sala: <span>Laboratório 04</span></p>
+            <p>Classroom: <span>6z3bakp</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Cultura Digital</span></p>
+            <p>Prof: <span>Luciane Ribeiro</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>7rf2yy7</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Meio Ambiente </span></p>
+            <p>Prof: <span>Viviane X. Ferreira</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>lo4mz5g</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Comportamento do Consumidor </span></p>
+            <p>Prof: <span>Ana Cristina Lima</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>tyy2p6j</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Direitos Humanos</span></p>
+            <p>Prof: <span>Renato de Campus</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>amax673</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Empreendedorismo</span></p>
+            <p>Prof: <span>Nádia Pizzolitto</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>5r3wben</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Sustentabilidade e Qualidade de Vida </span></p>
+            <p>Prof: <span>Solange Luiz</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>vcqdd74</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col flex-1 h-full gap-1">
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Cultura e Sociedade</span></p>
+            <p>Prof: <span>Henrique</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>jcmngt4</span></p>
+          </div>
+          <div class="flex h-full flex-col justify-end bg-white text-[10px] [&_p]:font-black [&_span]:font-normal">
+            <p>Disciplina: <span>Ergonomia</span></p>
+            <p>Prof: <span>Gabriel Arroyo</span></p>
+            <p>Sala: <span>305</span></p>
+            <p>Classroom: <span>rbcfzhk</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
 </html>
